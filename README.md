@@ -12,3 +12,7 @@ syncs back.
 ## Comparison to Rockbox:
 
 - Removed beep sound when reaching the start or end of a list.
+- Removed anroid folder (will never be a target)
+- Removed debian folder (will never be a target)
+- Removed packaging folder (will never be a target)
+- Removed gdp folder (debugging not available on ipod)
