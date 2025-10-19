@@ -228,8 +228,6 @@ enum system_sound
     SOUND_KEYCLICK = 0,
     SOUND_TRACK_SKIP,
     SOUND_TRACK_NO_MORE,
-    SOUND_LIST_EDGE_BEEP_WRAP,
-    SOUND_LIST_EDGE_BEEP_NOWRAP,
 };
 
 /* Play a standard sound */
