@@ -8,3 +8,7 @@ on the device. (I have all my music in beets).
 
 Some stretch goals are extensions for both beets and rockbox, like a podcatcher that 
 syncs back.
+
+## Comparison to Rockbox:
+
+- Removed beep sound when reaching the start or end of a list.
