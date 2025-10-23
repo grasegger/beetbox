@@ -16,3 +16,4 @@ syncs back.
 - Removed debian folder (will never be a target)
 - Removed packaging folder (will never be a target)
 - Removed gdp folder (debugging not available on ipod)
+- Removed manual folder (no need to keep it and it clutters search results)
