@@ -17,3 +17,4 @@ syncs back.
 - Removed packaging folder (will never be a target)
 - Removed gdp folder (debugging not available on ipod)
 - Removed manual folder (no need to keep it and it clutters search results)
+- Made the hardware beep way more pleasant

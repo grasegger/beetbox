@@ -43,7 +43,7 @@ static void piezo_start(unsigned short cycles, unsigned short periods)
     PCON0 = (PCON0 & 0x00ffffff) | 0x53000000;
     /* configure timer for 100 kHz (12 MHz / 4 / 30) */
     TACMD = (1 << 1);   /* TA_CLR */
-    TAPRE = 30 - 1;     /* prescaler */
+    TAPRE = 25 - 1;     /* prescaler */
     TACON = (1 << 13) | /* TA_INT1_EN */
             (0 << 12) | /* TA_INT0_EN */
             (0 << 11) | /* TA_START */
@@ -92,7 +92,7 @@ void piezo_button_beep(bool beep, bool force)
         if (beep)
             piezo_start(22, 457);
         else
-            piezo_start(40, 4);
+            piezo_start(4, 4);
     }
 }
 
