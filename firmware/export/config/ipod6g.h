@@ -22,7 +22,7 @@
 #define HAVE_LBA48
 
 /* define this if you have recording possibility */
-#define HAVE_RECORDING
+// #define HAVE_RECORDING
 //#define HAVE_AGC
 //#define HAVE_HISTOGRAM
 
@@ -215,7 +215,7 @@
 #define BOOTDIR "/.rockbox"
 
 /* Define this for FM radio input available */
-#define HAVE_FMRADIO_IN
+// #define HAVE_FMRADIO_IN
 
 /** Port-specific settings **/
 
