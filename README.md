@@ -19,3 +19,4 @@ syncs back.
 - Removed manual folder (no need to keep it and it clutters search results)
 - Made the hardware beep way more pleasant
 - Removed fm and recording capabilites
+- Made the software beep slightly more pleasant

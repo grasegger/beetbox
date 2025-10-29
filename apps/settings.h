@@ -210,7 +210,7 @@ enum {  ALARM_START_WPS = 0,
 /* Keyclick stuff */
 
  /* Not really a setting but several files should stay synced */
-#define KEYCLICK_DURATION 2
+#define KEYCLICK_DURATION 1
 
 /** virtual pointer stuff.. move to another .h maybe? **/
 /* These define "virtual pointers", which could either be a literal string,
