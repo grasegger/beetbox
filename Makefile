@@ -18,7 +18,7 @@ ipod: configure
 	@cd build-ipod && make -C ../tools ipod_fw
 	@du -b build-ipod/rockbox.ipod
 	@du -b build-ipod/rockbox.bin
-	@du -b build-ipod/rockbox.tar
+	@du -h build-ipod/rockbox.tar
 
 install: ipod configure
 	make -C build-ipod fullinstall -j 16
