@@ -134,7 +134,6 @@ spacerocks.c
 bounce.c
 calculator.c
 chip8.c
-chopper.c
 demystify.c
 jewels.c
 minesweeper.c
