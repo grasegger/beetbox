@@ -108,13 +108,6 @@ pictureflow.c
 
 metronome.c
 
-/* Lua needs at least 160 KB to work in */
-#if PLUGIN_BUFFER_SIZE >= 0x80000
-#ifdef HAVE_LCD_COLOR
-pixel-painter.lua
-#endif /* HAVE_LCD_COLOR */
-#endif /* PLUGIN_BUFFER_SIZE >= 0x80000 */
-
 rockblox1d.c
 calendar.c
 text_editor.c
