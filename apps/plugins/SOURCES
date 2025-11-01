@@ -106,7 +106,6 @@ rockboy.c
 #endif
 
 zxbox.c
-chessbox.c
 goban.c
 pictureflow.c
 
