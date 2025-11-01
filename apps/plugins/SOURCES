@@ -179,7 +179,6 @@ matrix.c
 speedread.c
 
 #if (LCD_WIDTH > 138)
-invadrox.c
 superdom.c
 #endif
 
