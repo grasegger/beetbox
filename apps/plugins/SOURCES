@@ -103,7 +103,6 @@ rockboy.c
 #endif
 
 zxbox.c
-goban.c
 pictureflow.c
 
 #endif /* PLUGIN_BUFFER_SIZE <= 0x20000 */

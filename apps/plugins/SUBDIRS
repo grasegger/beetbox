@@ -42,7 +42,6 @@ fractals
 imageviewer
 sudoku
 reversi
-goban
 frotz
 
 #ifndef OLYMPUS_MROBE_500
