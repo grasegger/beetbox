@@ -200,13 +200,6 @@ sub make_install {
         #glob_copy("$ROOT/apps/plugins/lua_scripts/*.lua", "$temp_dir/rocks/demos/lua_scripts/");
     }
 
-    #lua picross puzzles
-    if(-e "$ROOT/apps/plugins/picross") {
-        unless (glob_mkdir("$libdir/rocks/games/.picross")) {
-            return 0;
-        }
-        glob_install("$ROOT/apps/plugins/picross/*.picross", "$libdir/rocks/games/.picross");
-    }
 
     # all the rest directories
     foreach my $t (@userstuff) {
@@ -482,12 +475,6 @@ sub buildzip {
         glob_copy("$ROOT/apps/plugins/lua_scripts/*.lua", "$temp_dir/rocks/demos/lua_scripts/");
     }
 
-    #lua picross puzzles
-    if(-e "$ROOT/apps/plugins/picross") {
-        glob_mkdir("$temp_dir/rocks/games/.picross");
-        glob_copy("$ROOT/apps/plugins/picross/*.picross", "$temp_dir/rocks/games/.picross/");
-    }
-
     # exclude entries for the image file types not supported by the imageviewer for the target.
     my $viewers = "$ROOT/apps/plugins/viewers.config";
     my $c="cat $viewers | gcc $cppdef -I. -I$firmdir/export -E -P -include config.h -";
@@ -583,10 +570,6 @@ sub buildzip {
         copy("$ROOT/apps/plugins/sokoban.levels", "$temp_dir/rocks/games/sokoban.levels"); # sokoban levels
         copy("$ROOT/apps/plugins/snake2.levels", "$temp_dir/rocks/games/snake2.levels"); # snake2 levels
         copy("$ROOT/apps/plugins/rockbox-fonts.config", "$temp_dir/rocks/viewers/");
-        # picross files
-        copy("$ROOT/apps/plugins/picross_default.picross", "$temp_dir/rocks/games/picross_default.picross");
-        copy("$ROOT/apps/plugins/bitmaps/native/picross_numbers.bmp",
-             "$temp_dir/rocks/games/picross_numbers.bmp");
     }
 
     if(-e "$temp_dir/rocks/demos/pictureflow.rock") {
