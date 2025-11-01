@@ -123,7 +123,6 @@ demystify.c
 open_plugins.c
 oscilloscope.c
 periodic_table.c
-pong.c
 sliding_puzzle.c
 snake.c
 snake2.c
