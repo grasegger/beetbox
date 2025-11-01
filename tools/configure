@@ -1523,7 +1523,7 @@ help() {
     --with-address-sanitizer
                       Enables the AddressSanitizer feature. Forces SDL threads.
     --with-ubsan      Enables the UB Sanitizer feature.  Forces SDL threads.
-    --32-bit          Force a 32-bit simulator (use with --sdl-threads for duke3d)
+    --32-bit          Force a 32-bit simulator
     --prefix          Target installation directory
     --compiler-prefix Override compiler prefix (inherently dangerous)
     --help            Shows this message (must not be used with other options)

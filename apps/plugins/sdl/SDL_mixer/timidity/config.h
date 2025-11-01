@@ -171,7 +171,6 @@ typedef char int8;
 #define DEFAULT_PATH	"C:\\TIMIDITY"
 #else
 #define DEFAULT_PATH	"/.rockbox/patchset"
-#define DEFAULT_PATH1	"/.rockbox/duke3d"
 #define DEFAULT_PATH2	"/.rockbox/timidity"
 #define DEFAULT_PATH3	"/.rockbox/midi"
 #endif

@@ -11,17 +11,15 @@ SDL_SRCDIR := $(APPSDIR)/plugins/sdl
 SDL_OBJDIR := $(BUILDDIR)/apps/plugins/sdl
 
 SDL_SRC := $(call preprocess, $(SDL_SRCDIR)/SOURCES)
-DUKE3D_SRC := $(call preprocess, $(SDL_SRCDIR)/SOURCES.duke)
 WOLF3D_SRC := $(call preprocess, $(SDL_SRCDIR)/SOURCES.wolf)
 QUAKE_SRC := $(call preprocess, $(SDL_SRCDIR)/SOURCES.quake)
 
 SDL_OBJ := $(call c2obj, $(SDL_SRC))
-DUKE3D_OBJ = $(call c2obj, $(DUKE3D_SRC))
 WOLF3D_OBJ = $(call c2obj, $(WOLF3D_SRC))
 QUAKE_OBJ = $(call c2obj, $(QUAKE_SRC))
 
 # add source files to OTHER_SRC to get automatic dependencies
-OTHER_SRC += $(SDL_SRC) $(DUKE3D_SRC) $(WOLF3D_SRC) $(QUAKE_SRC)
+OTHER_SRC += $(SDL_SRC) $(WOLF3D_SRC) $(QUAKE_SRC)
 OTHER_INC += -I$(SDL_SRCDIR)/include
 
 # include comes first because of possible system SDL headers taking
@@ -41,38 +39,21 @@ SDLFLAGS = -I$(SDL_SRCDIR)/include $(filter-out -O%,$(PLUGINFLAGS))		\
 
 ifndef APP_TYPE
     ### no target has a big enough plugin buffer
-    ROCKS += $(SDL_OBJDIR)/duke3d.ovl
     ROCKS += $(SDL_OBJDIR)/wolf3d.ovl
     ROCKS += $(SDL_OBJDIR)/quake.ovl
 
-    DUKE3D_OUTLDS = $(SDL_OBJDIR)/duke3d.link
     WOLF3D_OUTLDS = $(SDL_OBJDIR)/wolf3d.link
     QUAKE_OUTLDS = $(SDL_OBJDIR)/quake.link
 
     SDL_OVLFLAGS = -Wl,--gc-sections -Wl,-Map,$(basename $@).map
 else
     ### simulator
-    ROCKS += $(SDL_OBJDIR)/duke3d.rock
     ROCKS += $(SDL_OBJDIR)/wolf3d.rock
     ROCKS += $(SDL_OBJDIR)/quake.rock
 endif
 
 # Duke3D
 
-$(SDL_OBJDIR)/duke3d.rock: $(SDL_OBJ) $(DUKE3D_OBJ) $(TLSFLIB)
-
-$(SDL_OBJDIR)/duke3d.refmap: $(SDL_OBJ) $(DUKE3D_OBJ) $(TLSFLIB)
-
-$(DUKE3D_OUTLDS): $(PLUGIN_LDS) $(SDL_OBJDIR)/duke3d.refmap
-	$(call PRINTS,PP $(@F))$(call preprocess2file,$<,$@,-DOVERLAY_OFFSET=$(shell \
-		$(TOOLSDIR)/ovl_offset.pl $(SDL_OBJDIR)/duke3d.refmap))
-
-$(SDL_OBJDIR)/duke3d.ovl: $(SDL_OBJ) $(DUKE3D_OBJ) $(TLSFLIB) $(DUKE3D_OUTLDS)
-	$(SILENT)$(CC) $(PLUGINFLAGS) -o $(basename $@).elf \
-		$(filter %.o, $^) \
-		$(filter %.a, $+) \
-		-lgcc -T$(DUKE3D_OUTLDS) $(SDL_OVLFLAGS)
-	$(call PRINTS,LD $(@F))$(call objcopy,$(basename $@).elf,$@)
 
 # Wolf3D
 
