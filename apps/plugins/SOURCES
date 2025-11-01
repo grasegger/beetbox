@@ -13,7 +13,6 @@ cue_playlist.c
 dart_scorer.c
 dict.c
 file_picker.c
-jackpot.c
 keybox.c
 keyremap.c
 lastfm_scrobbler.c

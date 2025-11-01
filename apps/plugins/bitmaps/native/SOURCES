@@ -1,6 +1,3 @@
-/* Jackpot */
-jackpot_slots.30x420x1.bmp
-
 /* Clock */
 #if (LCD_WIDTH >= 320) && (LCD_HEIGHT >= 240) && (LCD_DEPTH >= 16)
 clock_binary.320x240x16.bmp
