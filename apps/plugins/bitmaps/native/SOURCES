@@ -679,7 +679,7 @@ sokoban_tiles.4x4x1.bmp
 #endif /* tilesize */
 #endif /* HAVE_COLOR */
 
-/* Solitaire and Blackjack */
+/* Solitaire */
 #ifdef HAVE_LCD_COLOR
 #if LCD_WIDTH >= 640
 card_back.74x98x16.bmp
