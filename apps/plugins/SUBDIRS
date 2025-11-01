@@ -41,7 +41,6 @@ fft
 fractals
 imageviewer
 sudoku
-reversi
 frotz
 
 #ifndef OLYMPUS_MROBE_500
