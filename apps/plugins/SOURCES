@@ -116,7 +116,6 @@ metronome.c
 
 /* Lua needs at least 160 KB to work in */
 #if PLUGIN_BUFFER_SIZE >= 0x80000
-boomshine.lua
 picross.lua
 #ifdef HAVE_LCD_COLOR
 pixel-painter.lua
