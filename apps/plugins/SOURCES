@@ -41,7 +41,6 @@ stopwatch.c
 theme_remove.c
 vbrfix.c
 md5sum.c
-dice.c
 disktidy.c
 flipit.c
 shopper.c
