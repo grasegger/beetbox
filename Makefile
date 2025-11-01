@@ -1,6 +1,5 @@
 .PHONY: simulator ipod install clean configure
 
-
 configure:
 	@mkdir -p build-ipod
 	@cd build-ipod && ../tools/configure --target=29 --type=na --prefix=$(shell findmnt -noTARGET "/dev/disk/by-uuid/DDF4-DA29") --rbdir=/beetbox
@@ -15,10 +14,11 @@ simulator:
 
 ipod: configure
 	@make -C build-ipod -j 16
-	@make -C build-ipod -j 16 
+	@make -C build-ipod tar -j 16
 	@cd build-ipod && make -C ../tools ipod_fw
 	@du -b build-ipod/rockbox.ipod
 	@du -b build-ipod/rockbox.bin
+	@du -b build-ipod/rockbox.tar
 
 install: ipod configure
 	make -C build-ipod fullinstall -j 16
@@ -49,5 +49,5 @@ fdisk:
 	@echo "---------------------------"
 	@echo "Now run sfdisk /dev/sdX < script.fdisk"
 
-watch: 
+watch:
 	fd | entr make simulator

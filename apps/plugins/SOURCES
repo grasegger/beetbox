@@ -130,7 +130,6 @@ chip8.c
 demystify.c
 open_plugins.c
 oscilloscope.c
-pegbox.c
 periodic_table.c
 pong.c
 sliding_puzzle.c

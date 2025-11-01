@@ -95,65 +95,6 @@ fft_colors.16.bmp
 #endif
 
 
-/* PegBox */
-#ifdef HAVE_LCD_COLOR
-/* for most targets only LCD_WIDTH is important, e.g. Nano and e200 use the same set */
-#if LCD_WIDTH >= 640
-pegbox_pieces.48x48x16.bmp
-pegbox_header.640x80x16.bmp
-#elif LCD_WIDTH >= 320
-pegbox_pieces.24x24x16.bmp
-pegbox_header.320x40x16.bmp
-#elif LCD_WIDTH >= 240
-pegbox_pieces.16x16x16.bmp
-pegbox_header.240x40x16.bmp
-#elif LCD_WIDTH >= 220
-pegbox_pieces.16x16x16.bmp
-pegbox_header.220x40x16.bmp
-#elif LCD_WIDTH >= 176
-pegbox_pieces.12x12x16.bmp
-pegbox_header.176x28x16.bmp
-#elif LCD_WIDTH >= 160
-pegbox_pieces.12x12x16.bmp
-pegbox_header.160x24x16.bmp
-#elif LCD_WIDTH >= 132
-pegbox_pieces.9x9x16.bmp
-pegbox_header.22x80x16.bmp
-#elif LCD_WIDTH >= 128
-pegbox_pieces.10x10x16.bmp
-#  if LCD_HEIGHT > 96
-pegbox_header.128x42x16.bmp
-#  else
-pegbox_header.128x16x16.bmp
-#  endif
-#elif LCD_WIDTH >= 96
-pegbox_pieces.8x8x16.bmp
-pegbox_header.96x32x16.bmp
-#endif /* different colour displays */
-#elif LCD_DEPTH > 1
-#if LCD_WIDTH >= 160
-pegbox_pieces.12x12x2.bmp
-pegbox_header.160x24x2.bmp
-#elif LCD_WIDTH >= 138
-pegbox_pieces.10x10x2.bmp
-pegbox_header.138x26x2.bmp
-#elif LCD_WIDTH >= 128
-pegbox_pieces.10x10x2.bmp
-pegbox_header.128x16x2.bmp
-#endif /* different greyscale displays */
-#else /* mono */
-#if LCD_WIDTH >= 160
-pegbox_pieces.12x12x1.bmp
-pegbox_header.160x24x1.bmp
-#elif LCD_WIDTH >= 128
-pegbox_header.20x64x1.bmp
-pegbox_pieces.9x7x1.bmp
-#elif LCD_WIDTH >= 112
-pegbox_header.112x8x1.bmp
-pegbox_pieces.9x7x1.bmp
-#endif
-#endif
-
 /* Puzzles */
 #if defined(HAVE_LCD_COLOR) && (LCD_STRIDEFORMAT == HORIZONTAL_STRIDE)
 puzzles_cursor.11x16x24.bmp
