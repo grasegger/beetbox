@@ -47,7 +47,6 @@ public:
         BuildSourceUrl,
         BuildFontUrl,
 
-        DoomUrl,
         Duke3DUrl,
         PuzzFontsUrl,
         QuakeUrl,

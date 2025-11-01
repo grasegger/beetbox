@@ -44,7 +44,6 @@ const static struct {
     { PlayerBuildInfo::BuildFontUrl,      ":build:/font_url"    },
 
     // other URLs -- those are not directly related to the build, but handled here.
-    { PlayerBuildInfo::DoomUrl,           "other/doom_url"      },
     { PlayerBuildInfo::Duke3DUrl,         "other/duke3d_url"    },
     { PlayerBuildInfo::PuzzFontsUrl,      "other/puzzfonts_url" },
     { PlayerBuildInfo::QuakeUrl,          "other/quake_url"     },
@@ -371,4 +370,3 @@ QStringList PlayerBuildInfo::targetNames(bool all)
     }
     return result;
 }
-

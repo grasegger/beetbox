@@ -616,7 +616,6 @@ static const struct {
     const char *rockfile;               // rock file to look for
     PlayerBuildInfo::BuildInfo zipurl;  // download url
 } PluginDataFiles[] = {
-    { "Doom",          "games/doom.rock",         PlayerBuildInfo::DoomUrl      },
     { "Duke3D",        "games/duke3d.rock",       PlayerBuildInfo::Duke3DUrl    },
     { "Quake",         "games/quake.rock",        PlayerBuildInfo::QuakeUrl     },
     { "Puzzles fonts", "games/sgt-blackbox.rock", PlayerBuildInfo::PuzzFontsUrl },
