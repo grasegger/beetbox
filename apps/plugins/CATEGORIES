@@ -58,7 +58,6 @@ multiboot_select,apps
 open_plugins,viewers
 oscilloscope,demos
 otp,apps
-pacbox,games
 pdbox,viewers
 pegbox,games
 periodic_table,apps
