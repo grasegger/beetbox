@@ -48,7 +48,6 @@ public:
         BuildFontUrl,
 
         PuzzFontsUrl,
-        QuakeUrl,
         Wolf3DUrl,
         XWorldUrl,
         XRickUrl,
