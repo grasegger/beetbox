@@ -166,10 +166,6 @@ multiboot_select.c
 fire.c
 plasma.c
 
-#ifdef HAVE_LCD_COLOR
-codebuster.c
-#endif
-
 #if (LCD_WIDTH > 112) && (LCD_HEIGHT > 64)
 fireworks.c
 #endif
