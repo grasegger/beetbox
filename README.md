@@ -20,3 +20,7 @@ syncs back.
 - Made the hardware beep way more pleasant
 - Removed fm and recording capabilites
 - Made the software beep slightly more pleasant
+- Remove plugins & apps (to make code search easier and reduce compile time)
+
+## Removed plugins
+- 2048
