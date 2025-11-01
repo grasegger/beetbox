@@ -3,7 +3,6 @@
 #include "SOURCES"
 #else
 /* plugins common to all models */
-clix.c
 credits.c
 properties.c
 random_folder_advance_config.c
