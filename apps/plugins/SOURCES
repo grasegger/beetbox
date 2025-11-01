@@ -133,7 +133,6 @@ xobox.c
 spacerocks.c
 
 bounce.c
-bubbles.c
 calculator.c
 chip8.c
 chopper.c
