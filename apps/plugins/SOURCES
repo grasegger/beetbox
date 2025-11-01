@@ -118,7 +118,6 @@ pixel-painter.lua
 
 rockblox1d.c
 calendar.c
-mazezam.c
 text_editor.c
 wavview.c
 robotfindskitten.c
