@@ -113,7 +113,6 @@ demystify.c
 open_plugins.c
 oscilloscope.c
 periodic_table.c
-star.c
 starfield.c
 vu_meter.c
 
