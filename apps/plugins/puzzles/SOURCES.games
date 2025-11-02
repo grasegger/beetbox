@@ -1,4 +1,3 @@
-src/blackbox.c
 src/bridges.c
 src/cube.c
 src/dominosa.c
