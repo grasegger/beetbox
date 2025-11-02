@@ -109,9 +109,6 @@ oscilloscope.c
 periodic_table.c
 starfield.c
 
-#ifdef HAVE_HOTKEY
-announce_status.c
-#endif
 
 /* can't build in the sim for some reason */
 #if defined(HAVE_MULTIBOOT) && !defined(SIMULATOR)
