@@ -107,7 +107,6 @@ chip8.c
 open_plugins.c
 oscilloscope.c
 periodic_table.c
-starfield.c
 
 
 /* can't build in the sim for some reason */
