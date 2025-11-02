@@ -25,7 +25,6 @@ playing_time.c
 properties.c
 random_folder_advance_config.c
 rb_info.c
-rockblox.c
 search.c
 settings_dumper.c
 snow.c
@@ -107,7 +106,6 @@ pictureflow.c
 
 metronome.c
 
-rockblox1d.c
 calendar.c
 text_editor.c
 wavview.c
