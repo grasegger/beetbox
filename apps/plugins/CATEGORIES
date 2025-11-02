@@ -106,7 +106,6 @@ theme_remove,viewers
 vbrfix,viewers
 video,viewers
 viewer,viewers
-vu_meter,demos
 wav2wv,viewers
 wavplay,viewers
 wavrecord,apps

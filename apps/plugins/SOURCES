@@ -109,7 +109,6 @@ open_plugins.c
 oscilloscope.c
 periodic_table.c
 starfield.c
-vu_meter.c
 
 #ifdef HAVE_HOTKEY
 announce_status.c
