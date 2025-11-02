@@ -555,7 +555,6 @@ sub buildzip {
 
     if($bitmap) {
         copy("$ROOT/apps/plugins/sokoban.levels", "$temp_dir/rocks/games/sokoban.levels"); # sokoban levels
-        copy("$ROOT/apps/plugins/snake2.levels", "$temp_dir/rocks/games/snake2.levels"); # snake2 levels
         copy("$ROOT/apps/plugins/rockbox-fonts.config", "$temp_dir/rocks/viewers/");
     }
 

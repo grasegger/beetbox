@@ -119,8 +119,6 @@ demystify.c
 open_plugins.c
 oscilloscope.c
 periodic_table.c
-snake.c
-snake2.c
 solitaire.c
 sokoban.c
 star.c
