@@ -109,7 +109,6 @@ metronome.c
 calendar.c
 text_editor.c
 wavview.c
-xobox.c
 
 bounce.c
 calculator.c
