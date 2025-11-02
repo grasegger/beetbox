@@ -128,7 +128,6 @@ fireworks.c
 rockpaint.c
 #endif
 
-rocklife.c
 
 #if LCD_DEPTH > 1                  /* non-mono bitmap targets */
 
