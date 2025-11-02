@@ -120,7 +120,6 @@ periodic_table.c
 star.c
 starfield.c
 vu_meter.c
-wormlet.c
 
 #ifdef HAVE_HOTKEY
 announce_status.c
