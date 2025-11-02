@@ -616,7 +616,6 @@ static const struct {
     const char *rockfile;               // rock file to look for
     PlayerBuildInfo::BuildInfo zipurl;  // download url
 } PluginDataFiles[] = {
-    { "Wolf3D",        "games/wolf3d.rock",       PlayerBuildInfo::Wolf3DUrl    },
     { "MIDI Patchset", "viewers/midi.rock",       PlayerBuildInfo::MidiPatchsetUrl },
 };
 

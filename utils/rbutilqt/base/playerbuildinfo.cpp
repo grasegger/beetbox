@@ -45,7 +45,6 @@ const static struct {
 
     // other URLs -- those are not directly related to the build, but handled here.
     { PlayerBuildInfo::PuzzFontsUrl,      "other/puzzfonts_url" },
-    { PlayerBuildInfo::Wolf3DUrl,         "other/wolf3d_url"    },
     { PlayerBuildInfo::MidiPatchsetUrl,   "other/patcheset_url" },
 };
 

@@ -48,7 +48,6 @@ public:
         BuildFontUrl,
 
         PuzzFontsUrl,
-        Wolf3DUrl,
         MidiPatchsetUrl,
     };
     enum DeviceInfo {
