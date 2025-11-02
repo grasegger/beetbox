@@ -102,66 +102,6 @@ rockpaint.8x8x24.bmp
 rockpaint_hsvrgb.8x10x24.bmp
 #endif
 
-/* Solitaire */
-#ifdef HAVE_LCD_COLOR
-#if LCD_WIDTH >= 640
-card_back.74x98x16.bmp
-card_deck.962x392x16.bmp
-solitaire_suitsi.74x392x16.bmp
-
-#elif LCD_WIDTH >= 480
-card_back.55x73x16.bmp
-card_deck.715x291x16.bmp
-solitaire_suitsi.55x291x16.bmp
-
-#elif LCD_WIDTH >= 320
-card_back.37x49x16.bmp
-card_deck.481x196x16.bmp
-solitaire_suitsi.37x196x16.bmp
-#elif LCD_WIDTH >= 220
-card_back.26x33x16.bmp
-card_deck.338x132x16.bmp
-solitaire_suitsi.26x132x16.bmp
-#elif LCD_WIDTH >= 160
-card_back.18x23x16.bmp
-card_deck.234x92x16.bmp
-solitaire_suitsi.18x92x16.bmp
-#elif LCD_WIDTH >= 128
-card_back.15x20x16.bmp
-card_deck.195x80x16.bmp
-solitaire_suitsi.15x80x16.bmp
-#elif LCD_WIDTH >= 96
-card_back.11x15x16.bmp
-card_deck.143x60x16.bmp
-solitaire_suitsi.11x60x16.bmp
-#endif
-#elif LCD_DEPTH > 1 /* greyscale */
-#if LCD_WIDTH >= 160
-card_back.18x23x2.bmp
-card_deck.234x92x2.bmp
-solitaire_suitsi.18x92x2.bmp
-#elif LCD_WIDTH >= 128
-card_back.15x20x2.bmp
-card_deck.195x80x2.bmp
-solitaire_suitsi.15x80x2.bmp
-#endif
-#else /* monochrome */
-#if LCD_WIDTH >= 160
-card_back.18x23x1.bmp
-card_deck.234x92x1.bmp
-solitaire_suitsi.18x92x1.bmp
-#elif LCD_WIDTH >= 112
-card_back.13x13x1.bmp
-card_deck.169x52x1.bmp
-solitaire_suitsi.13x52x1.bmp
-#endif
-#endif
-
-#if (LCD_HEIGHT/10) < (LCD_WIDTH/16)
-#define STAR_TILESIZE (LCD_HEIGHT/10)
-#else
-#define STAR_TILESIZE (LCD_WIDTH/16)
-#endif
 
 /* Star */
 #ifdef HAVE_LCD_COLOR
