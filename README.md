@@ -21,3 +21,4 @@ syncs back.
 - Removed fm and recording capabilites
 - Made the software beep slightly more pleasant
 - Remove plugins & apps (to make code search easier and reduce compile time)
+  - Part of the goals here is to include all functionallity as part of the main app.
