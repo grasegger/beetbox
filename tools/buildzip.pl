@@ -167,12 +167,6 @@ sub make_install {
         glob_install("$src/rocks/$t/*", "$libdir/rocks/$t", "-m 0755");
     }
 
-    if(-e "$src/rocks/games/sgt_puzzles") {
-        unless (glob_mkdir("$libdir/rocks/games/sgt_puzzles")) {
-            return 0;
-        }
-        glob_install("$src/rocks/games/sgt_puzzles/*", "$libdir/rocks/games/sgt_puzzles", "-m 0755");
-    }
 
     # rocks/viewers/lua
     unless (glob_mkdir("$libdir/rocks/viewers/lua")) {
@@ -536,13 +530,6 @@ sub buildzip {
     foreach my $line (@rock_targetdirs) {
         if ($line =~ /([^,]*),(.*)/) {
             my ($plugin, $dir)=($1, $2);
-            if($dir  eq 'games' and substr(${plugin}, 0, 4) eq "sgt-") {
-                glob_mkdir("$temp_dir/rocks/$dir/sgt_puzzles");
-                move("$temp_dir/rocks/${plugin}.rock", "$temp_dir/rocks/$dir/sgt_puzzles/${plugin}.rock");
-            }
-            else {
-                move("$temp_dir/rocks/${plugin}.rock", "$temp_dir/rocks/$dir/${plugin}.rock");
-            }
             if(-e "$temp_dir/rocks/${plugin}.ovl") {
                 # if there's an "overlay" file for the .rock, move that as
                 # well

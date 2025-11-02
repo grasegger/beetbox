@@ -95,13 +95,6 @@ fft_colors.16.bmp
 #endif
 
 
-/* Puzzles */
-#if defined(HAVE_LCD_COLOR) && (LCD_STRIDEFORMAT == HORIZONTAL_STRIDE)
-puzzles_cursor.11x16x24.bmp
-#endif
-
-
-
 
 /* Rockpaint */
 #ifdef HAVE_LCD_COLOR

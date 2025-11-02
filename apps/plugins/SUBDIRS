@@ -17,7 +17,6 @@ xworld
 sdl
 #endif
 
-puzzles
 #endif
 
 #if    (CONFIG_KEYPAD != SANSA_M200_PAD) /* not enough buttons */ \
