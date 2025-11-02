@@ -64,10 +64,6 @@ pitch_screen.c
 mp3_encoder.c
 wav2wv.c
 
-#if CONFIG_RTC
-alarmclock.c
-#endif /* CONFIG_RTC */
-
 /* Platform-specific */
 #if defined(IRIVER_H100_SERIES) || defined(IRIVER_H300_SERIES)
 iriverify.c
