@@ -49,7 +49,6 @@ public:
 
         PuzzFontsUrl,
         Wolf3DUrl,
-        XWorldUrl,
         XRickUrl,
         MidiPatchsetUrl,
     };
