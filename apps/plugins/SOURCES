@@ -117,7 +117,6 @@ multiboot_select.c
 
 /* Plugins needing the grayscale lib on low-depth LCDs */
 fire.c
-plasma.c
 
 #if (LCD_WIDTH > 112) && (LCD_HEIGHT > 64)
 fireworks.c
