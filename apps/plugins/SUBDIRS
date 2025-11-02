@@ -27,11 +27,7 @@ fractals
 imageviewer
 frotz
 
-#ifndef OLYMPUS_MROBE_500
-#if PLUGIN_BUFFER_SIZE > 0x40000 || PLUGIN_BUFFER_SIZE <= 0x20000 /* overlay */
-zxbox
-#endif
-#endif
+
 
 #if MEMORYSIZE > 2 /* we need a lot of RAM for instruments */
 midi
