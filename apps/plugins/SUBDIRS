@@ -22,9 +22,6 @@ pictureflow
 tagcache
 #endif
 
-#if PLUGIN_BUFFER_SIZE > 0x20000
-fft
-#endif
 
 fractals
 imageviewer
