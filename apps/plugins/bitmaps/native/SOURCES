@@ -102,7 +102,13 @@ rockpaint.8x8x24.bmp
 rockpaint_hsvrgb.8x10x24.bmp
 #endif
 
+#if (LCD_HEIGHT/10) < (LCD_WIDTH/16)
+#define STAR_TILESIZE (LCD_HEIGHT/10)
+#else
+#define STAR_TILESIZE (LCD_WIDTH/16)
 
+
+#endif
 /* Star */
 #ifdef HAVE_LCD_COLOR
 #if     (STAR_TILESIZE >= 40)
