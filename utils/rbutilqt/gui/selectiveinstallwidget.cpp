@@ -617,7 +617,6 @@ static const struct {
     PlayerBuildInfo::BuildInfo zipurl;  // download url
 } PluginDataFiles[] = {
     { "Wolf3D",        "games/wolf3d.rock",       PlayerBuildInfo::Wolf3DUrl    },
-    { "XRick",         "games/xrick.rock",        PlayerBuildInfo::XRickUrl     },
     { "MIDI Patchset", "viewers/midi.rock",       PlayerBuildInfo::MidiPatchsetUrl },
 };
 

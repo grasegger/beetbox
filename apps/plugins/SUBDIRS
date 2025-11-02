@@ -70,7 +70,3 @@ mpegplayer
 lua
 lua_scripts
 #endif
-
-#if (LCD_DEPTH > 1)
-xrick
-#endif
