@@ -120,7 +120,6 @@ open_plugins.c
 oscilloscope.c
 periodic_table.c
 solitaire.c
-sokoban.c
 star.c
 starfield.c
 vu_meter.c
