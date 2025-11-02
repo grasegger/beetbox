@@ -409,37 +409,6 @@ matrix_normal.bmp
 #define SMALLER_DIMENSION (LCD_HEIGHT - 20)
 #endif
 
-#if defined HAVE_LCD_COLOR
-#if SMALLER_DIMENSION <= 80
-sliding_puzzle.80x80x16.bmp
-#elif SMALLER_DIMENSION <= 96
-sliding_puzzle.96x96x16.bmp
-#elif SMALLER_DIMENSION <= 108
-sliding_puzzle.108x108x16.bmp
-#elif SMALLER_DIMENSION <= 128
-sliding_puzzle.128x128x16.bmp
-#elif SMALLER_DIMENSION <= 132
-sliding_puzzle.132x132x16.bmp
-#elif SMALLER_DIMENSION <= 176
-sliding_puzzle.176x176x16.bmp
-#elif SMALLER_DIMENSION <= 240
-sliding_puzzle.240x240x16.bmp
-#elif SMALLER_DIMENSION <= 360
-sliding_puzzle.360x360x16.bmp
-#elif SMALLER_DIMENSION <= 480
-sliding_puzzle.480x480x16.bmp
-#endif
-#elif (LCD_DEPTH > 1)
-#if SMALLER_DIMENSION <= 96
-sliding_puzzle.96x96x2.bmp
-#elif SMALLER_DIMENSION <= 110
-sliding_puzzle.108x108x2.bmp
-#elif SMALLER_DIMENSION <= 128
-sliding_puzzle.128x128x2.bmp
-#endif
-#else /* mono targets, one size currently */
-sliding_puzzle.80x64x1.bmp
-#endif
 
 /* Logo */
 #if LCD_DEPTH >= 16
